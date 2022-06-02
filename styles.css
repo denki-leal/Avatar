@@ -1,0 +1,265 @@
+@import url("http://fonts.cdnfonts.com/css/papyrus%27");
+* {
+  padding: 0;
+  margin: 0;
+}
+.normal {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Papyrus", sans-serif;
+}
+
+#button_red {
+  border-radius: 5px;
+  width: 20px;
+  height: 10px;
+  padding: 10px;
+  background-color: rgba(255, 0, 0, 1);
+}
+
+@keyframes main {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    background-image: url(./images/wp5539885-avatar-2-movie-2021-wallpapers.jpg);
+  }
+}
+#tela-inicial {
+  height: 100%;
+  background-image: url(./images/wp5539841-avatar-2-movie-2021-wallpapers.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  animation-fill-mode: forwards;
+  animation-name: main;
+  animation-duration: 3s;
+  animation-delay: 14.5s;
+}
+#div-titulo {
+  height: 25%;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 900;
+  animation-fill-mode: forwards;
+  animation-name: div-titulo;
+  animation-duration: 17.5s;
+}
+@keyframes div-titulo {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(8px);
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  95% {
+    transform: translateY(2px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+}
+#div-imagem {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  animation-fill-mode: forwards;
+  animation-duration: 17.5s;
+  animation-name: div-imagem;
+}
+@keyframes div-imagem {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+h1 {
+  color: #000;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px rgb(2, 4, 3),
+    0 0 82px rgb(32, 30, 60), 0 0 92px rgb(25, 23, 54),
+    0 0 102px rgb(23, 23, 61), 0 0 151px rgb(39, 44, 139);
+}
+button {
+  position: absolute;
+  left: 28px;
+  bottom: 22px;
+  animation-name: botao;
+  animation-duration: 16.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes botao {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+    background-color: rgba(255, 0, 0, 1);
+  }
+  100% {
+    opacity: 1;
+    background-color: rgba(0, 0, 255, 1);
+  }
+}
+video {
+  position: absolute;
+  left: 0;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-name: video;
+}
+@keyframes video {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.titulo-depois {
+  position: absolute;
+  left: 25%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  bottom: 11%;
+  animation: flicker 24s forwards;
+  color: rgb(4, 20, 29);
+} /* 05/12 */
+
+@keyframes titulos-depois {
+  0%,
+  79% {
+    opacity: 0;
+  }
+  80%,
+  100% {
+    opacity: 1;
+  }
+}
+
+.jackson {
+  font-size: 16px;
+  position: absolute;
+  left: 16%;
+  bottom: 4%;
+  color: rgb(123, 205, 246);
+} /* DIRETOR DE ARTE */
+
+@keyframes flicker {
+  0% {
+    opacity: 0;
+  }
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  79% {
+    opacity: 0;
+  }
+  83% {
+    opacity: 1;
+    text-shadow: 0px 0px 10px #fff, 0px 0px 20px #fff, 0px 0px 25px #fff,
+      0px 0px 30px rgb(123, 205, 246), 0px 0px 40px rgb(123, 205, 246),
+      0px 0px 40px rgb(123, 205, 246), 0px 0px 50px rgb(123, 205, 246),
+      0px 0px 50px rgb(123, 205, 246);
+  }
+  84%,
+  86%,
+  88%,
+  90%,
+  92%,
+  94%,
+  96%,
+  98% {
+    text-shadow: none;
+  }
+  85%,
+  87%,
+  89%,
+  91%,
+  93%,
+  95%,
+  97%,
+  100% {
+    text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 15px #fff,
+      0 0 10px rgb(123, 205, 246), 0 0 13px rgb(123, 205, 246),
+      0 0 15px rgb(123, 205, 246), 0 0 18px rgb(123, 205, 246),
+      0 0 20px rgb(123, 205, 246);
+  }
+}
+
+#imagem-arco {
+  position: absolute;
+  right: 25%;
+}
+
+.titulo-imagem-preta {
+  position: absolute;
+  color: rgb(123, 205, 246);
+  left: 12%;
+  top: 52%;
+  font-size: 36px;
+}
+
+h3 {
+  animation-name: titulos-depois;
+  animation-duration: 21.9s;
+  animation-fill-mode: forwards;
+}
